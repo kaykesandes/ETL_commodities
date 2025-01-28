@@ -5,17 +5,17 @@ with source as (
         "Date",
         "Close",
         "simbolo"
-    from {{ source('postgres', 'commodities') }}
+    from 
+        {{ source ('dbsalesaovivo', 'commodities') }}
 ),
 
--- renamed
-
 renamed as (
+
     select
         cast("Date" as date) as data,
         "Close" as valor_fechamento,
         simbolo
-    from   
+    from
         source
 )
 

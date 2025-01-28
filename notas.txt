@@ -1,5 +1,0 @@
-O que é um DW?
-O que é um DBT?
-
-Nossa empresa vende Commodities a gente vai usar um API para pegar os preços atualizados e teremos uma planilha
-com total de vendas e iremos juntar as informações
