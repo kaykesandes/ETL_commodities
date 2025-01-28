@@ -40,3 +40,57 @@ Runtime Error
 [0m22:09:25.439310 [debug] [MainThread]: Command `dbt run` failed at 22:09:25.439310 after 0.08 seconds
 [0m22:09:25.440312 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB4AEB4EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB4A7EB890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB4AC6FB60>]}
 [0m22:09:25.440312 [debug] [MainThread]: Flushing usage events
+[0m15:19:32.300352 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ab2ed8880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ab1e69780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ab1e69720>]}
+
+
+============================== 15:19:32.302636 | 289514e4-927d-42dd-add2-7d5f8367e698 ==============================
+[0m15:19:32.302636 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:19:32.303132 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': '/home/kayke/project/Python/DataScience/workshop-aberto-dw-do-zero-aovivo', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:19:32.308679 [info ] [MainThread]: dbt version: 1.9.1
+[0m15:19:32.309034 [info ] [MainThread]: python version: 3.10.12
+[0m15:19:32.309321 [info ] [MainThread]: python path: /home/kayke/project/Python/DataScience/workshop-aberto-dw-do-zero-aovivo/env/bin/python3
+[0m15:19:32.309597 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m15:19:32.313543 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DB_HOST_PROD'
+[0m15:19:32.314476 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.056300834, "process_in_blocks": "0", "process_kernel_time": 0.080364, "process_mem_max_rss": "86980", "process_out_blocks": "8", "process_user_time": 0.83378}
+[0m15:19:32.314938 [debug] [MainThread]: Command `dbt debug` failed at 15:19:32.314835 after 0.06 seconds
+[0m15:19:32.315278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ab2ed8880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ab1e765f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ab1e762c0>]}
+[0m15:19:32.315820 [debug] [MainThread]: Flushing usage events
+[0m15:19:32.959821 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:22:59.032326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcab5140850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcab4101750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcab41016f0>]}
+
+
+============================== 15:22:59.034528 | 40449237-c0c6-4850-afee-b4afb956c8f2 ==============================
+[0m15:22:59.034528 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:22:59.034963 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/kayke/project/Python/DataScience/workshop-aberto-dw-do-zero-aovivo', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:22:59.040400 [info ] [MainThread]: dbt version: 1.9.1
+[0m15:22:59.040729 [info ] [MainThread]: python version: 3.10.12
+[0m15:22:59.041015 [info ] [MainThread]: python path: /home/kayke/project/Python/DataScience/workshop-aberto-dw-do-zero-aovivo/env/bin/python3
+[0m15:22:59.041308 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m15:22:59.046261 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DB_HOST_PROD'
+[0m15:22:59.047432 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.05621595, "process_in_blocks": "0", "process_kernel_time": 0.039654, "process_mem_max_rss": "86788", "process_out_blocks": "16", "process_user_time": 0.871748}
+[0m15:22:59.048050 [debug] [MainThread]: Command `dbt debug` failed at 15:22:59.047916 after 0.06 seconds
+[0m15:22:59.048537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcab5140850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcab410e560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcab410e4a0>]}
+[0m15:22:59.049098 [debug] [MainThread]: Flushing usage events
+[0m15:22:59.682829 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:24:15.288270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc837008820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc835f9fe20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc835f9fe80>]}
+
+
+============================== 15:24:15.290422 | 54a3c5d2-cc40-48ec-b432-bc9db534c4e5 ==============================
+[0m15:24:15.290422 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:24:15.290859 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/kayke/project/Python/DataScience/workshop-aberto-dw-do-zero-aovivo', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:24:15.296182 [info ] [MainThread]: dbt version: 1.9.1
+[0m15:24:15.296516 [info ] [MainThread]: python version: 3.10.12
+[0m15:24:15.296801 [info ] [MainThread]: python path: /home/kayke/project/Python/DataScience/workshop-aberto-dw-do-zero-aovivo/env/bin/python3
+[0m15:24:15.297088 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m15:24:15.300754 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DB_HOST_PROD'
+[0m15:24:15.301683 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.05581118, "process_in_blocks": "0", "process_kernel_time": 0.060277, "process_mem_max_rss": "87028", "process_out_blocks": "16", "process_user_time": 0.853937}
+[0m15:24:15.302090 [debug] [MainThread]: Command `dbt debug` failed at 15:24:15.302008 after 0.06 seconds
+[0m15:24:15.302431 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc837008820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc835fa67a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc835fa6170>]}
+[0m15:24:15.302766 [debug] [MainThread]: Flushing usage events
+[0m15:24:15.901604 [debug] [MainThread]: An error was encountered while trying to flush usage events

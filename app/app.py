@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 import streamlit as st
+import plotly.express as px
 from sqlalchemy import create_engine
 from sqlalchemy.exc import ProgrammingError
 from dotenv import load_dotenv
@@ -42,9 +43,23 @@ def get_data():
 st.set_page_config(page_title='Dashboard do diretor', layout='wide')
 
 # Título do Dashboard
-st.title('Esse e um texto')
+st.title('Dashboard de Commodities')
 
 # Descrição
+st.markdown("""
+<style>
+    .main {
+        background-color: #f0f2f6;
+    }
+    .stTitle {
+        color: #4CAF50;
+    }
+    .stMarkdown {
+        color: #4CAF50;
+    }
+</style>
+""", unsafe_allow_html=True)
+
 st.write("""
 Este dashboard mostra os dados de commodities e suas transações.
 """)
@@ -52,4 +67,17 @@ Este dashboard mostra os dados de commodities e suas transações.
 # Obter os dados
 df = get_data()
 
+# Mostrar os dados em uma tabela
 st.dataframe(df)
+
+# Gráfico de linha para valor de fechamento ao longo do tempo
+fig = px.line(df, x='data', y='valor_fechamento', color='simbolo', title='Valor de Fechamento ao Longo do Tempo')
+st.plotly_chart(fig)
+
+# Gráfico de barras para quantidade de ações por símbolo
+fig = px.bar(df, x='simbolo', y='quantidade', color='simbolo', title='Quantidade de Ações por Símbolo')
+st.plotly_chart(fig)
+
+# Gráfico de dispersão para valor vs ganho
+fig = px.scatter(df, x='valor', y='ganho', color='simbolo', title='Valor vs Ganho')
+st.plotly_chart(fig)

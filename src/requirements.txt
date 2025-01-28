@@ -3,3 +3,7 @@ sqlalchemy
 python-dotenv
 psycopg2-binary
 yfinance
+plotly.express
+dbt-core
+dbt-postgres
+streamlit
